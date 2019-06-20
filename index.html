@@ -12,6 +12,10 @@
 .tabulator .tabulator-header .tabulator-col .tabulator-col-content .tabulator-col-title{
 	white-space: normal;
 	text-overflow: clip;
+
+}
+.example-table{
+        text-align: center;
 }
 </style>
 
@@ -44,8 +48,6 @@
 <script>
    //Build Tabulator
    var table = new Tabulator("#example-table", {
-       height:false,
-       layout:"fitColumn",
 
        //data loading
        ajaxURL:"https://cmorchecker.github.io/ers4cmoresm/LS3MIP.json",
@@ -59,6 +61,9 @@
                 "Access-Control-Allow-Origin": "https://cmorchecker.github.io", //the URL origin of the site making the request
             },
        },
+
+       height:false,
+       layout:"fitColumns",
 
        //autoColumns:true,
        //placeholder:"Awaiting Data, Please Load File",
