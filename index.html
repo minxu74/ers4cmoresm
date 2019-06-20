@@ -20,8 +20,9 @@
 <body>
    <h1> Expert review system for cmorizing LS3MIP </h1>
    <div class="table-controls hidden-xs">
-   <button id="file-load-trigger"> Open File </button>
-   <a href="e3sm.html" target="_blank">E3SM variable list</a>
+   <button id="file-load-trigger"> Refresh Table </button>
+   <!--a href="e3sm.html" target="_blank">E3SM variable list</a-->
+   <button onclick="window.location.href = 'e3sm.html';">E3SM variable list</button>
    </div>
    <div> 
    </div>
@@ -32,7 +33,7 @@
       <form action="/" method="POST">
          <label for="file">Select the JSON file:</label>
          <input name="file" id="file" type="file" multiple />
-         <label for="commit-title">Commit title:</label>
+         <label for="commit-title">Commit title (reviewer name: short desc):</label>
          <input id="commit-title" name="commit-title" type="text" />
          <input type="submit" value="upload"/>
       </form>
