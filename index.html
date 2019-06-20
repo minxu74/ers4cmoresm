@@ -26,6 +26,17 @@
    <div> 
    </div>
    <div id="example-table"></div>
+
+
+   <div>
+      <form action="/" method="POST">
+         <label for="file">Select the JSON file:</label>
+         <input name="file" id="file" type="file" multiple />
+         <label for="commit-title">Commit title:</label>
+         <input id="commit-title" name="commit-title" type="text" />
+         <input type="submit" />
+      </form>
+   </div>
 </body>
 <script>
    //Build Tabulator
