@@ -20,7 +20,7 @@
 <body>
    <h1> Expert review system for cmorizing LS3MIP </h1>
    <div class="table-controls hidden-xs">
-   <!--button id="file-load-trigger"> Open File </button-->
+   <button id="file-load-trigger"> Open File </button>
    <a href="e3sm.html" target="_blank">E3SM variable list</a>
    </div>
    <div> 
@@ -151,9 +151,9 @@
    });
    
    //trigger AJAX load on "Load Data via AJAX" button click
-   //$("#file-load-trigger").click(function(){
-   //    table.setDataFromLocalFile();
-   //});
+   $("#file-load-trigger").click(function(){
+       table.setData();
+   });
 
 
    //custom file formatter
