@@ -1,10 +1,10 @@
 [
 	{
-		"confidence": "98",
+		"confidence": 0,
 		"relationship": "",
 		"_children": [
 			{
-				"confidence": 10,
+				"confidence": "100",
 				"relationship": "",
 				"frequency": "mon",
 				"longname": "net heat flux into lake/snow surface, excluding light transmission",
